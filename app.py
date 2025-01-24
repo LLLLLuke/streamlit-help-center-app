@@ -167,7 +167,7 @@ def main():
 
     # User input
     query = st.text_input(
-        "请输入您的问题 (Enter your query):", value="我要怎么在平台上赚钱？"
+        "请输入您的问题 (Enter your query):", value="账号登不上去了怎么办？"
     )
 
     # Submit query
