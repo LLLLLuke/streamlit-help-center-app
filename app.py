@@ -102,7 +102,7 @@ def get_deepseek_completion(query: str, context: List[Dict]) -> Dict:
     """
     # Replace with your actual API key and base_url
     client = OpenAI(
-        api_key = st.secrets["general"]["DEEPSEEK_API_KEY"]
+        api_key = st.secrets["general"]["DEEPSEEK_API_KEY"],
         base_url = st.secrets["general"]["BASE_URL"]
     )
 
