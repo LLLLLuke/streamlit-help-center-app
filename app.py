@@ -176,7 +176,7 @@ def main():
     if st.button("提交问题 (Submit)"):
         with st.spinner("正在查询帮助中心..."):
             context = rag.find_relevant_sections(query)
-        st.write("以下是检索到的相关信息：", context)
+        # st.write("以下是检索到的相关信息：", context)
 
         with st.spinner("正在向DeepSeek API发送请求..."):
             response_data = get_deepseek_completion(query, context)
