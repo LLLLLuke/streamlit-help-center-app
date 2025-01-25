@@ -39,7 +39,7 @@ class HelpCenterRAG:
             self.index.add(embeddings)
 
     def find_relevant_sections(
-        self, query: str, top_k: int = 12, min_score: float = 0.4
+        self, query: str, top_k: int = 12, min_score: float = 0.45
     ) -> List[dict]:
         """
         Find the most relevant sections using FAISS.
