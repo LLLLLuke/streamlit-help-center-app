@@ -1,3 +1,4 @@
 faiss-cpu
 sentence-transformers
 openai
+google-genai
