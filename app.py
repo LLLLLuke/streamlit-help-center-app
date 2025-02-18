@@ -34,8 +34,8 @@ class GoogleSearchWrapper:
 
 
 searcher = GoogleSearchWrapper(
-    api_key="AIzaSyAV5UoVqW_cJF1Y0JyObvfapv9dKsZuoD8",
-    cse_id="72116904c075d4b9c"
+    api_key=st.secrets["general"]["GOOGLE_SEARCH_API_KEY"],
+    cse_id=st.secrets["general"]["GOOGLE_CSE_ID"]
 )
 
 
@@ -178,7 +178,7 @@ def main():
 
     # Submit query
     if st.button("提交问题 (Submit)"):
-        with st.spinner("正在查询..."):
+        with st.spinner("正在查询帮助中心..."):
             context = rag.find_relevant_sections(query)
         # st.write("以下是检索到的相关信息：", context)
 
