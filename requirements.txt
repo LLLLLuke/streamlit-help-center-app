@@ -2,3 +2,5 @@ faiss-cpu
 sentence-transformers
 openai
 google-generativeai
+langchain-core
+langchain-google-community
